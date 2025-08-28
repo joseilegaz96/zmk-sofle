@@ -47,6 +47,10 @@
     combos {
         compatible = "zmk,combos";
 
+        uc: unicode-behavior {
+        compatible = "zmk,behavior-unicode";
+        };
+        
         softoff {
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
