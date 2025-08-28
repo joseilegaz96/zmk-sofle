@@ -51,6 +51,9 @@
 
     keymap {
         compatible = "zmk,keymap";
+    features {
+        unicode;
+    };
 
         layer0 {
             bindings = <
