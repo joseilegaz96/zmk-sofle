@@ -58,11 +58,11 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R        &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &kp CAPS    &kp A      &kp S         &kp D         &kp F        &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SCLN    &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V        &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp NUBS    &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp SPACE     &kp LEFT_ALT &mo 1                         &mo 2         &kp SPACE  &kp RIGHT_ALT   &kp RCTRL  &kp DELETE
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp SPACE     &kp LEFT_ALT &mo 1                         &mo 2         &kp SPACE  &kp RIGHT_ALT   &kp RCTRL  &kp DELETE &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "Escritura";
         };
 
         layer_1 {
