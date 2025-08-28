@@ -29,6 +29,11 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
+    features {
+        unicode;
+    };
+
+ {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -49,10 +54,6 @@
         };
     };
 
-/ {
-    features {
-        unicode;
-    };
 
     keymap {
         compatible = "zmk,keymap";
