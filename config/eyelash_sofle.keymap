@@ -74,8 +74,9 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &trans        &trans            &trans           &trans      &trans     &trans
             >;
 
-            display-name = "Funcion";
+           
             sensor-bindings = <&scroll_encoder>;
+            display-name = "Funcion";
         };
 
         layer_2 {
