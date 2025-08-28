@@ -49,11 +49,13 @@
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
+/ {
     features {
         unicode;
     };
+
+    keymap {
+        compatible = "zmk,keymap";
 
         layer0 {
             bindings = <
