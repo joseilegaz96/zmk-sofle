@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -41,17 +41,17 @@ layers:
   - SCLN
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - NUBS
   - Z
   - X
   - C
   - V
-  - $$mdi:arrow-right-bold$$
   - B
+  - $$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
+  - NUBS
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
