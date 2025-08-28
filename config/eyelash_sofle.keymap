@@ -67,11 +67,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5            &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &trans        &trans             &trans           &trans           &trans           &mmv MOVE_DOWN    &kp APOS         &trans         &trans     &trans        &kp LBRC          &kp RBRC 
-&trans     &trans         &trans             &trans           &trans           &trans           &mmv MOVE_LEFT    &kp NONUS_HASH   &trans          &trans    &trans       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans     &trans         &trans             &trans           &trans           &trans    &mmv MOVE_RIGHT          &trans           &trans           &trans      &trans    &kp MINUS           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &trans        &trans            &trans           &trans      &trans     &trans
+&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5            &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&trans      &trans           &trans          &trans           &trans           &trans            &mmv MOVE_DOWN   &kp APOS         &trans           &trans      &trans     &kp LBRC          &kp RBRC 
+&trans      &trans           &trans          &trans           &trans           &trans            &mmv MOVE_LEFT   &kp NONUS_HASH   &trans           &trans      &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans           &trans          &trans           &trans           &trans            &mmv MOVE_RIGHT  &trans           &trans           &trans      &trans     &kp MINUS         &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans            &trans           &trans           &trans           &trans      &trans     &trans
             >;
 
            
