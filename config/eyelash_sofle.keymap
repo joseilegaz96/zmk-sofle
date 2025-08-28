@@ -65,20 +65,7 @@
             display-name = "Escritura";
         };
 
-        layer_1 {
-            bindings = <
-&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5            &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &trans           &trans          &trans           &trans           &trans            &mmv MOVE_DOWN   &kp APOS         &trans           &trans      &trans     &kp LBRC          &kp RBRC 
-&trans      &trans           &trans          &trans           &trans           &trans            &mmv MOVE_LEFT   &kp NONUS_HASH   &trans           &trans      &trans     &kp LS(LBRC)      &kp LS(RBRC)
-&trans      &trans           &trans          &trans           &trans           &trans            &mmv MOVE_RIGHT  &trans           &trans           &trans      &trans     &kp MINUS         &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans            &trans           &trans           &trans           &trans      &trans     &trans
-            >;
-
-           
-            sensor-bindings = <&scroll_encoder>;
-            display-name = "Funcion";
-        };
-
+       
         layer_2 {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
