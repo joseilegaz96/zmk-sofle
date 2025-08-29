@@ -28,7 +28,8 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-   scroll_encoder: scroll_encoder {
+/ {
+    scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
@@ -36,6 +37,8 @@
         tap-ms = <100>;
     };
 
+    behaviors {
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -46,7 +49,10 @@
         };
     };
 
-   keymap {
+    keymap {
+        compatible = "zmk,keymap";
+
+       keymap {
         compatible = "zmk,keymap";
         layer0 {
             bindings = <
@@ -65,7 +71,7 @@
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10         &kp F12
 &trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_DOWN     &trans           &trans           &trans      &trans      &trans         &trans
 &trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_LEFT     &trans           &trans           &trans      &trans     &trans          &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans      &trans     &trans          &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &trans          &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans    
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -73,19 +79,17 @@
         };
 
 
-       layer_2 {
+    layer_2 {
         bindings = <
-&trans      &kp LBKT   &kp RBKT   &kp LBRC   &kp RBRC   &kp HASH  &trans       &kp EXCL   &kp AT     &kp DLLR   &kp PRCNT   &kp CARET   &trans
-&trans      &trans     &trans     &trans     &trans     &trans    &trans       &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &kp PLUS    &trans
-&trans      &trans     &trans     &trans     &trans     &trans    &trans       &trans     &trans     &trans     &trans       &kp EQUAL   &trans
-&trans      &trans     &trans     &trans     &trans     &trans    &trans       &trans     &trans      &kp MINUS  &kp UNDER  &trans       &trans
-&trans     &trans      &trans     &trans     &trans     &trans    &trans       &trans     &trans     &trans     &trans      &trans
+&none      &kp LBKT   &kp RBKT   &kp LBRC   &kp RBRC   &kp HASH   &none       &kp EXCL   &kp AT     &kp DLLR   &kp PRCNT   &kp CARET   &none
+&none      &none      &none      &none      &none      &none      &none       &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &kp PLUS    &none
+&none      &none      &none      &none      &none      &none      &none       &none      &none      &none      &none       &kp EQUAL   &none
+&none      &none      &none      &none      &none      &none      &none       &none      &none      &kp MINUS  &kp UNDER   &none       &none
+&none      &none      &none      &none      &none      &trans     &none       &trans     &none      &none      &none       &none
         >;
+         sensor-bindings = <&scroll_encoder>;
         display-name = "Símbolos";
     };
-
-
-
         layer_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -96,4 +100,4 @@
             >;
         };
     };
-};
+}; 
