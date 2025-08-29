@@ -38,6 +38,21 @@
     };
 
     behaviors {
+         open_brace: open_brace_behavior {
+            compatible = "zmk,behavior-mod-macro";
+            label = "OPEN_BRACE";
+            #binding-cells = <0>;
+            mods = <RALT>;   // AltGr en muchos layouts
+            key = <KC_LBRC>; // tecla [
+        };
+
+        close_brace: close_brace_behavior {
+            compatible = "zmk,behavior-mod-macro";
+            label = "CLOSE_BRACE";
+            #binding-cells = <0>;
+            mods = <RALT>;
+            key = <KC_RBRC>; // tecla ]
+        };
     };
 
     combos {
@@ -67,7 +82,7 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10         &kp F12
 &trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_DOWN     &trans           &trans           &trans      &trans     &trans          &trans
-&trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_LEFT     &trans           &trans           &trans      &trans     &kp KC_91       &trans
+&trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_LEFT     &trans           &trans           &trans      &trans     &open_brace     &close_brace 
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &trans          &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans    
             >;
