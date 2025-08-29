@@ -11,13 +11,12 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <100>;
+    delay-ms = <0>;
 };
 
 &mmv {
@@ -37,7 +36,6 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
         tap-ms = <100>;
     };
 
@@ -46,19 +44,19 @@
 
     combos {
         compatible = "zmk,combos";
-        
+
         softoff {
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
+        /* Nodo unicode correcto para &uc */
         uc: unicode-behavior {
-        compatible = "zmk,behavior-unicode";
+            compatible = "zmk,behavior-unicode";
         };
 
         layer0 {
@@ -69,7 +67,6 @@
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V        &kp B        &kp RIGHT_ARROW  &kp N      &kp M            &kp COMMA  &kp DOT          &kp NUBS    &kp ENTER
 &kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp SPACE     &kp LEFT_ALT &mo 1        &kp ENTER        &mo 2       &kp SPACE      &kp RIGHT_ALT &kp RCTRL      &kp DELETE
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Escritura";
         };
@@ -82,8 +79,6 @@
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &trans           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans    
             >;
-
-        
             sensor-bindings = <&scroll_encoder>;
             display-name = "Functions";
         };
@@ -96,7 +91,6 @@
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans    
             >;
-
             sensor-bindings = <&scroll_encoder>;
             display-name = "Bluetooth";
         };
