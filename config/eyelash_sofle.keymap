@@ -76,7 +76,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Function";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -90,6 +90,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            display-name = "Bluetooth";
         };
 
         layer_3 {
