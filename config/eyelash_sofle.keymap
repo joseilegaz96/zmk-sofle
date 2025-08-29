@@ -74,28 +74,4 @@
             sensor-bindings = <&scroll_encoder>;
             display-name = "Functions";
         };
-
-
-        layer_2 {
-    bindings = <
-        &none                &kp LALT_R MINS   &kp LALT_R EQL    &kp LALT_R 7     &kp LALT_R 0     &kp LALT_R 3     &none       &kp 1           &kp 2        &kp 4        &kp 5        &kp 6        &none
-        &none                &none             &none             &none             &none             &none           &none       &kp 7           &kp 8        &kp 9        &kp 0        &kp EQUAL     &none
-        &none                &none             &none             &none             &none             &none           &none       &none           &none        &none        &none        &kp EQUAL     &none
-        &none                &none             &none             &none             &none             &none           &none       &none           &none        &kp MINUS    &kp UNDERSCORE &none        &none
-        &none                &none             &none             &none             &none             &trans          &none       &trans          &none        &none        &none        &none
-    >;
-    sensor-bindings = <&scroll_encoder>;
-    display-name = "Simbolos";
-};
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-    };
 }; 
