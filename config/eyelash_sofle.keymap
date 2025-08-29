@@ -28,14 +28,7 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-/ {
-    behaviors {
-        uc: uc {
-            compatible = "zmk,behavior-unicode";
-        };
-    };
-
-    scroll_encoder: scroll_encoder {
+/   scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
@@ -72,7 +65,7 @@
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10         &kp F12
 &trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_DOWN     &trans           &trans           &trans      &trans      &trans         &trans
 &trans      &trans           &trans          &trans           &trans           &trans           &mmv MOVE_LEFT     &trans           &trans           &trans      &trans     &trans          &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &trans          &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans      &trans     &trans          &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans    
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -80,17 +73,19 @@
         };
 
 
-        layer_2 {
-            bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
-            >;
+       layer_2 {
+        bindings = <
+&none      &kp LBKT   &kp RBKT   &kp LBRC   &kp RBRC   &kp HASH   &none       &kp EXCL   &kp AT     &kp DLLR   &kp PRCNT   &kp CARET   &none
+&none      &none      &none      &none      &none      &none      &none       &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &kp PLUS    &none
+&none      &none      &none      &none      &none      &none      &none       &none      &none      &none      &none       &kp EQUAL   &none
+&none      &none      &none      &none      &none      &none      &none       &none      &none      &kp MINUS  &kp UNDER   &none       &none
+&none      &none      &none      &none      &none      &trans     &none       &trans     &none      &none      &none       &none
+        >;
+        display-name = "Símbolos";
+    };
+};
 
-            sensor-bindings = <&scroll_encoder>;
-        };
+
 
         layer_3 {
             bindings = <
