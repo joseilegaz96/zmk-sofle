@@ -49,9 +49,6 @@
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
-
        keymap {
         compatible = "zmk,keymap";
         layer_0 {
