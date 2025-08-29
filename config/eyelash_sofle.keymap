@@ -46,10 +46,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        uc: unicode-behavior {
-        compatible = "zmk,behavior-unicode";
-        };
         
         softoff {
             bindings = <&soft_off>;
@@ -60,6 +56,10 @@
 
     keymap {
         compatible = "zmk,keymap";
+
+        uc: unicode-behavior {
+        compatible = "zmk,behavior-unicode";
+        };
 
         layer0 {
             bindings = <
