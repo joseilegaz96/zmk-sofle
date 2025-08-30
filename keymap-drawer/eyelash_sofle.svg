@@ -641,8 +641,16 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="770" y="50" width="28" height="26" class="combo"/>
-<text x="784" y="63" class="combo tap">LBRACE</text>
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">LBKT</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">RBKT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -777,10 +785,11 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">HOME</text>
 </g>
-<g transform="translate(840, 112)" class="key trans keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(840, 112)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap">-</text>
+<text x="0" y="-24" class="key shifted">_</text>
 </g>
 <g transform="translate(896, 112)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1005,8 +1014,16 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="770" y="50" width="28" height="26" class="combo"/>
-<text x="784" y="63" class="combo tap">LBRACE</text>
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">LBKT</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">RBKT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1355,8 +1372,16 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="770" y="50" width="28" height="26" class="combo"/>
-<text x="784" y="63" class="combo tap">LBRACE</text>
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">LBKT</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">RBKT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1689,8 +1714,16 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="770" y="50" width="28" height="26" class="combo"/>
-<text x="784" y="63" class="combo tap">LBRACE</text>
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">LBKT</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
+<text x="868" y="112" class="combo tap">
+<tspan x="868" dy="-0.6em" style="font-size: 75%">LC(RALT)</tspan><tspan x="868" dy="1.2em" style="font-size: 75%">RBKT</tspan>
+</text>
 </g>
 </g>
 </g>
