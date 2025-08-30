@@ -48,10 +48,13 @@
             key-positions = <14 28 40>;
         };
 
-        lbrace: macro_0 {
+        
+    };
+
+    /lbrace: macro_0 {
             bindings = <&kp RALT &kp P>;  // AltGr (RALT) + P = {
         };
-    };
+
     keymap {
         compatible = "zmk,keymap";
 
