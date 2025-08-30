@@ -53,6 +53,7 @@
 
      macros {
         compatible = "zmk,macro";
+        #binding-cells = <0>;
 
         lbrace: lbrace_macro {
             bindings = <&kp RALT &kp P>;  // AltGr (RALT) + P = {
