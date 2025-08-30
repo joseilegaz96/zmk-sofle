@@ -90,7 +90,7 @@ layers:
   - END
   - $$mdi:arrow-up-bold$$
   - HOME
-  - {t: '-', s: _}
+  - '&macro_lbrace'
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
