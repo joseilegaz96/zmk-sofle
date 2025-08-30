@@ -38,9 +38,6 @@
     };
 
      macros {
-        compatible = "zmk,macro";
-        #binding-cells = <0>;
-
          lbrace_macro: lbrace_macro {
             compatible = "zmk,macro";
             #binding-cells = <0>;
