@@ -51,9 +51,13 @@
         
     };
 
-    lbrace: macro_0 {
+     macros {
+        compatible = "zmk,macro";
+
+        lbrace: macro_0 {
             bindings = <&kp RALT &kp P>;  // AltGr (RALT) + P = {
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
