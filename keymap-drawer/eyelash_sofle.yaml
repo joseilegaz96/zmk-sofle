@@ -38,8 +38,8 @@ layers:
   - J
   - K
   - L
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
+  - Ñ
+  - ´
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
