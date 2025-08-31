@@ -14,7 +14,7 @@ Supongamos que quiero añadir la ñ:
 
    - Esto es la capa layer0 añadimos la ñ al lado de la l para eso ponemos el codigo de la ñ(ES_N_TILDE) para eso vamos a la tecla que esta al lado de la l y lo añadimos &kp ES_N_TILDE como se puede ver abajo.
 
-     / {
+     / 
   keymap {
     compatible = "zmk,keymap";
 
