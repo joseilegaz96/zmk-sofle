@@ -1,5 +1,7 @@
 # Sofle
 
+Layout en Español
+
 - [中文](README.md)
 - [English](README_EN.md)
 
