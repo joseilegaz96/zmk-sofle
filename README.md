@@ -32,5 +32,5 @@ Supongamos que quiero añadir la ñ:
          display-name = "Escritura";
     };
 
-  Distrubucion de las teclas
+ ## Distrubucion de las teclas
 <img width="984" height="1608" alt="Keymap" src="https://github.com/user-attachments/assets/f7e01917-2528-4f53-a266-4ac982789071" />
