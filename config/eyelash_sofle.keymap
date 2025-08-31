@@ -1,5 +1,5 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -12,13 +12,12 @@
 #include "keys_es.h"
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <100>;
+    delay-ms = <0>;
 };
 
 &mmv {
@@ -34,16 +33,11 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
         tap-ms = <100>;
-    };
-
-    behaviors {
     };
 
     combos {
         compatible = "zmk,combos";
-
         softoff {
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
@@ -54,48 +48,49 @@
         compatible = "zmk,keymap";
 
         layer0 {
-    bindings = <
-        &kp ES_ESCAPE   &kp ES_N1       &kp ES_N2       &kp ES_N3       &kp ES_N4   &kp ES_N5       &kp UP_ARROW     &kp ES_N6       &kp ES_N7       &kp ES_N8       &kp ES_N9       &kp ES_N0       &kp BACKSPACE
-        &kp TAB         &kp ES_Q        &kp ES_W        &kp ES_E        &kp ES_R    &kp ES_T        &kp DOWN_ARROW   &kp ES_Y        &kp ES_U        &kp ES_I        &kp ES_O        &kp ES_P        &kp ES_BSLH
-        &kp CAPS        &kp ES_A        &kp ES_S        &kp ES_D        &kp ES_F    &kp ES_G        &kp LEFT_ARROW   &kp ES_H        &kp ES_J        &kp ES_K        &kp ES_L        &kp ES_SEMI     &kp ES_APOS
-        &kp LSHFT       &kp ES_Z        &kp ES_X        &kp ES_C        &kp ES_V    &kp ES_B        &kp RIGHT_ARROW  &kp ES_N        &kp ES_M        &kp ES_COMMA    &kp ES_DOT      &kp ES_FSLH     &kp ENTER
-        &kp C_MUTE      &kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT    &mo 1       &kp ES_SPACE    &kp ENTER        &kp ES_SPACE    &kp ENTER       &mo 2           &kp RIGHT_SHIFT &kp DELETE
-    >;
-};
-
-        layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+                &kp ES_ESCAPE   &kp ES_N1       &kp ES_N2       &kp ES_N3       &kp ES_N4   &kp ES_N5       &kp UP_ARROW     &kp ES_N6       &kp ES_N7       &kp ES_N8       &kp ES_N9       &kp ES_N0       &kp BACKSPACE
+                &kp TAB         &kp ES_Q        &kp ES_W        &kp ES_E        &kp ES_R    &kp ES_T        &kp DOWN_ARROW   &kp ES_Y        &kp ES_U        &kp ES_I        &kp ES_O        &kp ES_P        &kp ES_BSLH
+                &kp CAPS        &kp ES_A        &kp ES_S        &kp ES_D        &kp ES_F    &kp ES_G        &kp LEFT_ARROW   &kp ES_H        &kp ES_J        &kp ES_K        &kp ES_L        &kp ES_SEMI     &kp ES_APOS
+                &kp LSHFT       &kp ES_Z        &kp ES_X        &kp ES_C        &kp ES_V    &kp ES_B        &kp RIGHT_ARROW  &kp ES_N        &kp ES_M        &kp ES_COMMA    &kp ES_DOT      &kp ES_FSLH     &kp ENTER
+                &kp C_MUTE      &kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT    &mo 1       &kp ES_SPACE    &kp ENTER        &kp ES_SPACE    &kp ENTER       &mo 2           &kp RIGHT_SHIFT &kp DELETE
+            >;
+        };
+
+        layer1 {
+            bindings = <
+                &kp ES_GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+                &trans         &kp ES_GRAVE     &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp ES_MINUS      &kp ES_EQUAL
+                &trans         &kp ES_TILDE     &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp ES_LBKT       &kp ES_RBKT
+                &trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+                &kp C_MUTE     &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        layer2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+                &kp ES_TILDE &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
+                &trans       &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp ES_UNDER  &kp ES_PLUS
+                &trans       &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp ES_LBRC  &kp ES_RBRC
+                &trans       &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+                &trans       &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        layer3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
 };
+
