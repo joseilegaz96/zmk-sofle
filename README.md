@@ -14,20 +14,22 @@ Supongamos que quiero añadir la ñ:
 
    - Esto es la capa layer0 añadimos la ñ al lado de la l para eso ponemos el codigo de la ñ(ES_N_TILDE) para eso vamos a la tecla que esta al lado de la l y lo añadimos &kp ES_N_TILDE como se puede ver abajo.
 
-      keymap {
-        compatible = "zmk,keymap";
+     / {
+  keymap {
+    compatible = "zmk,keymap";
 
-        layer0 {
-            bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp ES_C_CEDILLA
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp ES_N_TILDE  &kp ES_ACUTE
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp ES_LT       &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE &mo 1      &kp ENTER        &mo 2      &kp SPACE  &kp RALT   &kp LCTRL        &kp DELETE
-            >;
+    layer0 {
+      bindings = <
+        &kp ESC      &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp UP_ARROW &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BACKSPACE
+        &kp TAB      &kp Q      &kp W      &kp E      &kp R      &kp T      &kp DOWN_ARROW &kp Y     &kp U      &kp I      &kp O      &kp P      &kp ES_C_CEDILLA
+        &kp CAPS     &kp A      &kp S      &kp D      &kp F      &kp G      &kp LEFT_ARROW &kp H     &kp J      &kp K      &kp L      &kp ES_N_TILDE &kp ES_ACUTE
+        &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B      &kp RIGHT_ARROW &kp N    &kp M      &kp COMMA  &kp DOT    &kp ES_LT  &kp ENTER
+        &kp C_MUTE   &kp LCTRL  &kp LEFT_GUI &kp LEFT_ALT &kp SPACE &mo 1   &kp ENTER &mo 2 &kp SPACE &kp RALT  &kp LCTRL  &kp DELETE
+      >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "Escritura";
-        };
-
+      sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+      display-name = "Escritura";
+    };
+  };
+  
 <img width="984" height="1608" alt="Keymap" src="https://github.com/user-attachments/assets/f7e01917-2528-4f53-a266-4ac982789071" />
