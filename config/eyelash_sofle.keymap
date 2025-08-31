@@ -68,10 +68,10 @@
 
         layer_1 {
             bindings = <
-&kp none   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&trans      &kp none        &kp none      &kp none      &kp none         &kp none           &mmv MOVE_DOWN   &kp PG_UP        &kp none          &kp ES_EXCL      &kp ES_IEXCL   &kp ES_LBKT       &kp ES_RBKT
-&trans      &kp none        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp none         &kp none    &kp ES_STAR  &kp ES_LBRC       &kp ES_RBRC
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp none  &kp ES_PLUS    &kp none          &trans
+&trans   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
+&trans      &trans        &trans      &trans               &trans           &trans           &mmv MOVE_DOWN   &kp PG_UP        &trans          &kp ES_EXCL      &kp ES_IEXCL   &kp ES_LBKT       &kp ES_RBKT
+&trans      &trans        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &trans         &trans    &kp ES_STAR  &kp ES_LBRC       &kp ES_RBRC
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp none  &kp ES_PLUS    &trans         &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &kp ES_MINUS     &trans
             >;
 
