@@ -90,7 +90,7 @@ layers:
   - END
   - $$mdi:arrow-up-bold$$
   - HOME
-  - {t: '-', s: _}
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))))
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
