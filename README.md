@@ -1,6 +1,6 @@
-# Sofle
+# Sofle con layout en Español 
 
-Layout en Español
+Fork modificado del a741725193/zmk-sofle para adaptarlo al layout español junto con la herramienta de
 
 - [中文](README.md)
 - [English](README_EN.md)
