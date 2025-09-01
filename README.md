@@ -32,4 +32,4 @@ Supongamos que quiero añadir la ñ:
     };
 
  ## Distrubución de las teclas
-<img width="984" height="1608" alt="Keymap" src="https://github.com/user-attachments/assets/f7e01917-2528-4f53-a266-4ac982789071" />
+<img width="984" height="1609" alt="my_keymap" src="https://github.com/user-attachments/assets/4b9d63d0-f3dd-4024-b4b6-ed1496ff41fd" />
