@@ -2,9 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Si quieres más remotos personalizados, agrégalos aquí
-    # - name: gpeye
-    #   url-base: https://github.com/GPeye
 
   projects:
     - name: eyelash_sofle
@@ -19,7 +16,7 @@ manifest:
     - name: zmk-nice-oled
       url: https://github.com/mctechnology17/zmk-nice-oled
       revision: main
-      path: modules/lib/zmk-nice-oled   # <- ruta recomendada para módulos extra
+      path: modules/lib/zmk-nice-oled   # ruta recomendada para módulos extra
 
   self:
     path: boards
