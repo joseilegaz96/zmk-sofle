@@ -21,3 +21,5 @@ manifest:
       import: app/west.yml
   self:
     path: boards
+  - name: zmk-nice-oled
+  url: https://github.com/mctechnology17/zmk-nice-oled
