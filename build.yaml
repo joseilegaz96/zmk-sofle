@@ -1,13 +1,34 @@
-include:
+ #include:
  # - board: eyelash_sofle_left
 #    shield: nice_view
-  - board: eyelash_sofle_right
+ # - board: eyelash_sofle_right
 #   shield: nice_view_custom
+#    shield: nice_view
+ # - board: eyelash_sofle_left
+#    shield: nice_view
+ #   snippet: studio-rpc-usb-uart
+ #   cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+ #   artifact-name: eyelash_sofle_studio_left
+#  - board: eyelash_sofle_left
+ #   shield: settings_reset
+
+
+ include:
+  # Mitad izquierda (con nice!view)
+  - board: eyelash_sofle_left
     shield: nice_view
+
+  # Mitad derecha (con nice!view)
+  - board: eyelash_sofle_right
+    shield: nice_view
+
+  # Opcional: compilación con ZMK Studio en la mitad izquierda
   - board: eyelash_sofle_left
     shield: nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: eyelash_sofle_studio_left
+
+  # Firmware especial para resetear configuraciones
   - board: eyelash_sofle_left
     shield: settings_reset
