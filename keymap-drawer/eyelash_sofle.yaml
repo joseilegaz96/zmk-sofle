@@ -253,9 +253,9 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - to 1
+  - {t: Funciones, h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - to 2
+  - {t: Bluetotooth, h: toggle}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
