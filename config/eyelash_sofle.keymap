@@ -151,7 +151,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp ES_C_CEDILLA
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp ES_N_TILDE  &kp ES_ACUTE
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp ES_LT       &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE &kp to 1   &kp ENTER        &kp to 2      &kp SPACE  &kp RALT   &kp LCTRL        &kp DELETE
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE &to 1   &kp ENTER        &to 2      &kp SPACE  &kp RALT   &kp LCTRL        &kp DELETE
             >;
             display-name = "Juegos";
         };
