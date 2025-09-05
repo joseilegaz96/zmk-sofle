@@ -267,4 +267,3 @@ combos:
   k: {t: Juegos, h: toggle}
 - p: [57, 59]
   k: {t: Escritura, h: toggle}
-  l: [Juegos]
