@@ -49,9 +49,15 @@
             key-positions = <14 28 40>;
         };
 
-         to_layer3 {
-        bindings = <&to 3>;
-        key-positions = <57 59>;
+        to_layer3 {
+            bindings = <&to 3>;
+            key-positions = <57 59>;
+        };
+
+        back_to_layer0 {
+            bindings = <&to 0>;
+            key-positions = <57 59>;
+            layers = <3>;
         };
     };
 
