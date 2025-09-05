@@ -253,9 +253,9 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - F23
+  - mo 1
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - F24
+  - mo 2
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
