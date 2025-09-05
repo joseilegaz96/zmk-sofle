@@ -638,14 +638,6 @@ rect.held, rect.combo.held {
 <text x="462" y="294" class="combo tap layer-activator">Juegos</text>
 </a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
-<path d="M462,294 l-54,0" class="combo"/>
-<path d="M462,294 l54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#Escritura">
-<text x="462" y="294" class="combo tap layer-activator"><tspan style="font-size: 67%">Escritura</tspan></text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-Funciones">
@@ -1033,14 +1025,6 @@ rect.held, rect.combo.held {
 <text x="462" y="294" class="combo tap layer-activator">Juegos</text>
 </a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
-<path d="M462,294 l-54,0" class="combo"/>
-<path d="M462,294 l54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#Escritura">
-<text x="462" y="294" class="combo tap layer-activator"><tspan style="font-size: 67%">Escritura</tspan></text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-Bluetotooth">
@@ -1391,14 +1375,6 @@ rect.held, rect.combo.held {
 <text x="462" y="294" class="combo tap layer-activator">Juegos</text>
 </a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
-<path d="M462,294 l-54,0" class="combo"/>
-<path d="M462,294 l54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#Escritura">
-<text x="462" y="294" class="combo tap layer-activator"><tspan style="font-size: 67%">Escritura</tspan></text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-Juegos">
@@ -1712,8 +1688,9 @@ rect.held, rect.combo.held {
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F23</text>
-</g>
+<a href="#Funciones">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 67%">Funciones</tspan></text>
+</a></g>
 <g transform="translate(462, 91)" class="key enter keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
@@ -1722,8 +1699,9 @@ rect.held, rect.combo.held {
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F24</text>
-</g>
+<a href="#Bluetotooth">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 60%">Bluetotoo…</tspan></text>
+</a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
