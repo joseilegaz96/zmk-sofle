@@ -1713,6 +1713,14 @@ rect.held, rect.combo.held {
 <text x="462" y="294" class="combo tap layer-activator">Juegos</text>
 </a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-2">
+<path d="M462,294 l-54,0" class="combo"/>
+<path d="M462,294 l54,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
+<a href="#Escritura">
+<text x="462" y="294" class="combo tap layer-activator"><tspan style="font-size: 67%">Escritura</tspan></text>
+</a><text x="462" y="305" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 </svg>
