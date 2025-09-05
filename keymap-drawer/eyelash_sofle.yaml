@@ -236,7 +236,7 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
+  - Z
   - X
   - C
   - V
@@ -249,8 +249,8 @@ layers:
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
-  - Z
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: Escritura, h: toggle}
