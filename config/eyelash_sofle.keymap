@@ -44,9 +44,13 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
 
-        bindings = <&kp CAPSLOCK &rgb_ug RGB_TOG>;
-};
-   
+        bindings = <&kp CAPSLOCK 
+                &rgb_ug RGB_ON 
+                &rgb_ug RGB_SAD   // Saturation Down (llevar a 0 = blanco)
+                &rgb_ug RGB_SAD   // repetir varias veces hasta blanco
+                &rgb_ug RGB_SAD
+                &rgb_ug RGB_SAD>;
+        }; 
 };
 
     combos {
