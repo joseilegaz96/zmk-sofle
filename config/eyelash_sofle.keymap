@@ -38,6 +38,17 @@
         tap-ms = <100>;
     };
 
+      leds {
+        compatible = "zmk,leds";
+        label = "status_leds";   // Puedes cambiar el nombre, pero luego debe coincidir en el behavior
+        pin = <&gpio0 13>;       // Pin donde esté tu tira/LED
+
+        led1: led_1 {
+            compatible = "zmk,led";
+            label = "led1";
+        };
+    };
+
     behaviors {
             caps_led_on: caps_led_on {
             compatible = "zmk,behavior-macro";
