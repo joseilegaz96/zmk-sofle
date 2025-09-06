@@ -41,11 +41,11 @@
 
     behaviors {
         caps_with_leds: caps_with_leds {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
 
-            bindings = <&kp CAPSLOCK>, <&rgb_ug RGB_TOG>;
-        };
+        bindings = <&kp CAPSLOCK &rgb_ug RGB_TOG>;
+};
    
 };
 
