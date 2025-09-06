@@ -55,7 +55,7 @@
             label = "CAPS_LED_ON";
             bindings = <
                 &kp CAPS       // Envía el keycode Caps Lock
-                &status_leds 1 255 0 0   // Enciende LED1 en rojo
+                &led1 1 255 0 0   // Enciende LED1 en rojo
             >;
         };
     };
