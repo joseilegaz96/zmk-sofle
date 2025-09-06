@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
-  - '&caps_leds'
+  - $$mdi:apple-keyboard-caps$$
   - A
   - S
   - D
