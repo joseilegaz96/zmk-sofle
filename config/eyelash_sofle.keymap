@@ -47,7 +47,7 @@
             bindings = <
                 &kp CAPS              // Mantener la tecla normal
                 &rgb_ug RGB_TOG       // Alternar LEDs (ON/OFF)
-                &rgb_ug RGB_SLD 255 255 255  // Set color fijo blanco (cuando se enciendan)
+                &rgb_ug RGB_SLD 0xFFFFFF  // Set color fijo blanco (cuando se enciendan)
             >;
         };
     };
