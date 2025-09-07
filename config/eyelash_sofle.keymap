@@ -43,8 +43,8 @@
         caps_with_leds: caps_with_leds {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-
-        bindings = <&kp CAPSLOCK &rgb_ug RGB_COLOR_HSV 0 0 255>;
+    
+        bindings = <&kp CAPSLOCK &rgb_ug RGB_ON &rgb_ug RGB_EFF>;
         };
     };
 
