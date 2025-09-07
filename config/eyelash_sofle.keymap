@@ -44,7 +44,7 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
     
-        bindings = <&kp CAPSLOCK &rgb_ug RGB_ON &rgb_ug RGB_EFF>;
+        bindings = <&kp CAPSLOCK &rgb_ug RGB_TOG>;
         };
     };
 
