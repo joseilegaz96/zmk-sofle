@@ -280,8 +280,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-Escritura">
-<text x="0" y="28" class="label" id="Escritura">Escritura:</text>
+<g transform="translate(40, 0)" class="layer-Escribir">
+<text x="0" y="28" class="label" id="Escribir">Escribir:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -593,8 +593,8 @@ rect.held, rect.combo.held {
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Funciones">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 67%">Funciones</tspan></text>
+<a href="#Funcion">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Funcion</tspan></text>
 </a></g>
 <g transform="translate(462, 91)" class="key enter keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
@@ -604,8 +604,8 @@ rect.held, rect.combo.held {
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Bluetooth">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 67%">Bluetooth</tspan></text>
+<a href="#Bluet">
+<text x="0" y="-4" class="key tap layer-activator">Bluet</text>
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -642,8 +642,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 388)" class="layer-Funciones">
-<text x="0" y="28" class="label" id="Funciones">Funciones:</text>
+<g transform="translate(40, 388)" class="layer-Funcion">
+<text x="0" y="28" class="label" id="Funcion">Funcion:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1031,8 +1031,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-Bluetooth">
-<text x="0" y="28" class="label" id="Bluetooth">Bluetooth:</text>
+<g transform="translate(40, 776)" class="layer-Bluet">
+<text x="0" y="28" class="label" id="Bluet">Bluet:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1694,8 +1694,8 @@ rect.held, rect.combo.held {
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Escritura">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 67%">Escritura</tspan></text>
+<a href="#Escribir">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Escribir</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(462, 91)" class="key none keypos-58">
@@ -1745,8 +1745,8 @@ rect.held, rect.combo.held {
 <path d="M462,294 l-54,0" class="combo"/>
 <path d="M462,294 l54,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#Escritura">
-<text x="462" y="294" class="combo tap layer-activator"><tspan style="font-size: 67%">Escritura</tspan></text>
+<a href="#Escribir">
+<text x="462" y="294" class="combo tap layer-activator"><tspan style="font-size: 75%">Escribir</tspan></text>
 </a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
 </g>

@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  Escritura:
+  Escribir:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -58,14 +58,14 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - Funciones
+  - Funcion
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Bluetooth
+  - Bluet
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:backspace-reverse-outline$$
-  Funciones:
+  Funcion:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Bluetooth:
+  Bluet:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -253,7 +253,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: Escritura, h: toggle}
+  - {t: Escribir, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -266,5 +266,5 @@ combos:
 - p: [57, 59]
   k: {t: Juegos, h: toggle}
 - p: [57, 59]
-  k: {t: Escritura, h: toggle}
+  k: {t: Escribir, h: toggle}
   l: [Juegos]
