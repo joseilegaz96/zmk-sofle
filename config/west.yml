@@ -5,9 +5,6 @@ manifest:
     - name: m165437 #new entry
       url-base: https://github.com/M165437 #new entry
   projects:
-   # - name: mario-peripheral-animation
-   #   remote: gpeye
-   #    revision: main 
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: main
