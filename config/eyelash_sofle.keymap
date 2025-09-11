@@ -104,9 +104,9 @@
 //┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┬─────────────┬───────────┬───────────┬───────────┬───────────┬───────────┬───────────────┐
 //│   TRANS   │    F1     │    F2     │    F3     │    F4     │    F5     │  MOVE_UP    │    F6     │    F7     │    F8     │    F9     │   F10     │     F12       │
 //├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼─────────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────────┤
-//│   TRANS   │   TRANS   │   TRANS   │   TRANS   │   TRANS   │   TRANS   │ MOVE_DOWN   │   CARET   │     |     │    ¡      │     !     │     [     │     ]         │
+//│   TRANS   │   TRANS   │   TRANS   │   TRANS   │   TRANS   │  PAGE_UP  │ MOVE_DOWN   │   CARET   │     |     │    ¡      │     !     │     [     │     ]         │
 //├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼─────────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────────┤
-//│   TRANS   │   TRANS   │   TRANS   │   TRANS   │   TRANS   │    MB5    │ MOVE_LEFT   │    '      │     \     │    *      │     -     │     {     │     }         │
+//│   TRANS   │   TRANS   │   TRANS   │   TRANS   │   TRANS   │  PAGE_DN  │ MOVE_LEFT   │    '      │     \     │    *      │     -     │     {     │     }         │
 //├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼─────────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────────┤
 //│   TRANS   │  RGB_OFF  │  RGB_ON   │  R_EFF    │  R_EFR    │  R_SPI    │ MOVE_RGHT   │  R_BRI    │  R_BRD    │    +      │    _      │    ¿      │     ?         │
 //├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼─────────────┼───────────┼───────────┼───────────┼───────────┼───────────┴───────────────┤
@@ -118,8 +118,8 @@
         layer_1 {
             bindings = <
 &trans   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7           &kp F8        &kp F9        &kp F10           &kp F12
-&trans   &trans           &trans          &trans           &trans           &trans             &mmv MOVE_DOWN   &kp ES_CARET         &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL  &kp ES_LBKT       &kp ES_RBKT
-&trans   &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp ES_SINGLE_QUOTE  &kp ES_BSLH      &kp ES_STAR   &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
+&trans   &trans           &trans          &trans           &trans           &kp PG_UP          &mmv MOVE_DOWN   &kp ES_CARET         &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL  &kp ES_LBKT       &kp ES_RBKT
+&trans   &trans           &trans          &trans           &trans           &kp PG_DN          &mmv MOVE_LEFT   &kp ES_SINGLE_QUOTE  &kp ES_BSLH      &kp ES_STAR   &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
 &trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI      &rgb_ug RGB_BRD  &kp ES_PLUS   &kp ES_UNDER   &kp ES_IQMARK     &kp ES_QMARK
 &kp C_MUTE  &trans        &trans          &trans           &trans           &trans             &kp ENTER        &trans               &trans           &trans        &trans        &trans
             >;
@@ -154,6 +154,18 @@
             sensor-bindings = <&scroll_encoder>;
             display-name = "Bluet";
         };
+
+//┌───────────┬────────────┬────────────┬────────────┬────────────┬────────────┬─────────────┬───────────┬───────────┬───────────┬────────────┬─────────────┬───────────────┐
+//│   ESC     │     1      │     2      │     3      │     4      │     5      │  ↑ (UP)     │     6     │     7     │     8     │     9      │     0       │  BACKSPACE    │
+//├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼─────────────┼───────────┼───────────┼───────────┼────────────┼─────────────┼───────────────┤
+//│   TAB     │     Q      │     W      │     E      │     R      │     T      │  ↓ (DOWN)   │     Y     │     U     │     I     │     O      │     P       │     Ç         │
+//├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼─────────────┼───────────┼───────────┼───────────┼────────────┼─────────────┼───────────────┤
+//│  CAPS     │     A      │     S      │     D      │     F      │     G      │  ← (LEFT)   │     H     │     J     │     K     │     L      │     Ñ       │     ´         │
+//├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼─────────────┼───────────┼───────────┼───────────┼────────────┼─────────────┼───────────────┤
+//│  SHIFT    │     Z      │     X      │     C      │     V      │     B      │  → (RIGHT)  │     N     │     M     │     ,     │     .      │     <       │   ENTER       │
+//├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼─────────────┼───────────┼───────────┼───────────┼────────────┼─────────────┴───────────────┤
+//│  MUTE     │   GUI      │   CTRL     │   ALT      │  SPACE     │   LAYER0   │    ---      │   ---     │   ---     │   RALT    │   LCTRL    │   DELETE    │               │
+//└───────────┴────────────┴────────────┴────────────┴────────────┴────────────┴─────────────┴───────────┴───────────┴───────────┴────────────┴─────────────┴───────────────┘
 
         layer_3 {
             bindings = <
